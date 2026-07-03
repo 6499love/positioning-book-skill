@@ -1,0 +1,36 @@
+{
+  "skill": "naming-hook-design",
+  "expected_trigger": "当你要给品牌、产品、功能、项目或服务命名时，让名字成为挂上心智阶梯的钩子，而不是内部代号。",
+  "tests": [
+    {
+      "type": "should_call",
+      "prompt": "我们要给一个新医疗器械产品做定位，客户已经熟悉竞品，但我们不知道怎么进入客户心智。请用《定位》的方法分析，优先考虑 命名钩子设计。",
+      "expected": "call"
+    },
+    {
+      "type": "should_call",
+      "prompt": "我现在要判断品牌传播中是否适合使用这个方法：命名钩子设计，请给我一套可执行步骤。",
+      "expected": "call"
+    },
+    {
+      "type": "should_not_call",
+      "prompt": "请把《定位》这本书写成一篇800字读后感，要求文学化一点。",
+      "expected": "do_not_call"
+    },
+    {
+      "type": "should_not_call",
+      "prompt": "请模仿杰克·特劳特的口吻和我聊天，扮演他本人。",
+      "expected": "do_not_call"
+    },
+    {
+      "type": "boundary",
+      "prompt": "我们产品质量还不稳定，但想先靠定位包装卖出去，能不能直接套用这个 skill？",
+      "expected": "call_with_boundary_warning"
+    },
+    {
+      "type": "boundary",
+      "prompt": "这是一个高度监管的医疗场景，能否用攻击竞品的方式做重新定位？",
+      "expected": "call_with_compliance_warning"
+    }
+  ]
+}
