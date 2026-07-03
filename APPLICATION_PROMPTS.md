@@ -1,21 +1,7 @@
-# 《定位》蒸馏包应用提示词
+# APPLICATION_PROMPTS
 
-## 1. 给一个产品做定位
+本文件保留为兼容旧版。更完整的官方提示词请见：
 
-请读取 `books/positioning-ries-trout/INDEX.md`，按《定位》的方法帮我分析这个产品应该如何定位。先调用 `six-step-positioning-project` 和 `outside-in-position-diagnosis`，再判断应该用第一进入、找空位、对比定位还是重新定位。输出：当前心智位置、目标位置、竞争阶梯、推荐定位语、不能说什么。
+- [`OFFICIAL_PROMPTS.md`](./OFFICIAL_PROMPTS.md)
 
-## 2. 压缩官网首屏文案
-
-请用 `simple-message-compression` 和 `naming-hook-design` 帮我压缩这段官网首屏文案。目标是让客户在3秒内知道：这是什么、和谁不同、为什么值得继续看。
-
-## 3. 评估是否做产品延伸
-
-请调用 `product-extension-kill-switch`，判断我们是否应该把老品牌名用于这个新产品。请按预期销量、竞争强度、广告支持、对母品牌影响、销售方式五个维度打分，并给出“沿用/子品牌/全新品牌”的建议。
-
-## 4. 弱势品牌找突破口
-
-请调用 `mental-ladder-mapping` 和 `follower-gap-positioning`。我们不是行业第一，也没有预算正面打头部品牌。请帮我从价格、人群、场景、渠道、时段、使用方式中找一个可以占住的空位。
-
-## 5. 医疗器械场景提醒
-
-在医疗器械、临床证据、招投标和合规宣传中，定位只能决定“客户如何理解你”，不能替代注册证、临床证据、性能验证和合规审查。凡涉及竞品比较，必须基于可验证事实，避免贬损式表述。
+推荐优先使用 `OFFICIAL_PROMPTS.md`，里面按岗位拆分了公众号、产品海报、产品专员、销售渠道、品牌管理、医疗器械等场景。
